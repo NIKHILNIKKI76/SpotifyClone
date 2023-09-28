@@ -1,0 +1,281 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+
+}
+
+.music-player{
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+
+}
+.nav-option:hover{
+    opacity: 1;
+
+}
+.nav-option i{
+    font-size: 1.25rem;
+
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+
+}
+.options{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+
+}
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+
+}
+
+.options .icons i{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.options .icons i:hover{
+    opacity: 1;
+}
+.boxes .card{
+    background-color: #232323;
+    color: white;
+    margin-top: 1rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0 0.7rem 0;
+    z-index: 1;
+}
+@media ( max-width: 1000px) {
+    .hide {
+    display: none;
+    }
+}
+.cards-container .card{
+    background-color: #111010;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: 0.3s;
+    
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.cards-container .card p{
+    color: white;
+}
+.cards-container .card img{
+    width: 100%;
+}
+.card .card-title{
+    font-weight: 600;
+}
+.card .card-info{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.cards-container .card:hover{
+    background-color: #232323;
+}
+.main-content .cards h3:hover{
+    text-decoration: underline;
+}
+.footer{
+    height: 220px;
+    display: flex;
+    /* align-items: center; */
+}
+.footer .line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+.music-player{
+    display: flex;
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#playback-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.player .player-control-icon{
+    height: 32px;
+    width: 32px;
+    padding: 0.5rem;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.player .player-control-icon:hover{
+    opacity: 0.9;
+}
+.controls{
+    width: 25%;
+}
+.playback-bar .progress-bar{
+    width: 70%;
+
+}
+.pause-btn{
+    height: 25px;
+    width: 28px;
+}
+
+.progress-bar{
+    appearance: none;
+    cursor: pointer;
+    z-index: 100;
+}
+ .progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    margin: -6px;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+} 
+.album img{
+    width: 4.5rem;
+    height: 3.5rem;
+}
+.album-text{
+    display: flex;
+    flex-direction: column;
+}
+.album{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 5.5rem;
+}
+.album .husband{
+    opacity: 0.5;
+}
+.album a{
+    font-size: 0.8rem;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+}
+.controls i{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.sound i,.progress-bar{
+    opacity: 0.5;
+}
+ .progress-bar:hover{
+    opacity: 1;
+}
+.controls i:hover{
+    opacity: 1;
+    font-size: 1.4rem;
+}
+.controls .sound{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar::-webkit-slider-thumb{
+    border-radius: 50%;
+}
+
